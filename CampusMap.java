@@ -1,3 +1,10 @@
+/*
+ * CampusMap Class
+ * Assignment 7
+ * @author R. Jordan Crouser + CSC120 (Fall '22)) + Leah Marville
+ * @version 8 November 2022
+ */
+
 import java.util.ArrayList;
 
 public class CampusMap {

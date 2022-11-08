@@ -1,8 +1,8 @@
 /*
  * House Class
- * Assignment 6
+ * Assignment 7
  * @author R. Jordan Crouser + CSC120 (Fall '22)) + Leah Marville
- * @version 1 November 2022
+ * @version 8 November 2022
  */
 
 import java.util.ArrayList;
