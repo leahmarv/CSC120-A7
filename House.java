@@ -20,6 +20,10 @@ public class House extends Building {
     System.out.println("You have built a house: 🏠");
   }
 
+  public void showOptions(){
+    System.out.println("Available options at " + this.name + ":\n + hasDiningRoom() \n + nResidents() \n + moveIn() \n + isResident()");
+}
+
   public boolean hasDiningRoom() {
     if (hasDiningRoom = true) {
       return true;

@@ -21,6 +21,10 @@ public class Cafe extends Building {
         this.nCups = cups;
     }
     
+    public void showOptions(){
+        System.out.println("Available options at " + this.name + ":\n + sellCoffee() \n + restock()");
+    }
+    
     public void sellCoffee(int size, int sugar, int cream) {
         
         nCoffeeOunces -= size;

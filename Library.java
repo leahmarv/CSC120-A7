@@ -19,6 +19,10 @@ public class Library extends Building {
       System.out.println("You have built a library: 📖");
     }
 
+    public void showOptions(){
+        System.out.println("Available options at " + this.name + ":\n + addTitle() \n + removeTitle() \n + checkOut() \n + returnBook() \n + containsTitle() \n + isAvailable() \n + printCollection()");
+    }
+
     public void addTitle(String title) {
         collection.put(title, true);
     }
