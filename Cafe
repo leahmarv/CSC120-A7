@@ -22,6 +22,7 @@ public class Cafe extends Building {
     }
     
     public void showOptions(){
+        super.showOptions()
         System.out.println("Available options at " + this.name + ":\n + sellCoffee() \n + restock()");
     }
     
