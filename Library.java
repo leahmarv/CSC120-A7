@@ -40,9 +40,17 @@ public class Library extends Building {
         collection.put(title, true);
     }
 
+    public String addTitle() {
+        return ("Please enter a title");
+    }
+
     public String removeTitle(String title) {
         collection.remove(title);
         return title;
+    }
+
+    public String removeTitle() {
+        return ("Please enter a title");
     }
 
     public void checkOut(String title) {

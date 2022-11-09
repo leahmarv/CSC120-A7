@@ -38,6 +38,26 @@ public class Cafe extends Building {
         }
     }
 
+    public void sellCoffee(int size, int sugar){
+        nCoffeeOunces -= size;
+        nSugarPackets -= sugar;
+        nCups -= 1;
+
+        if (nCoffeeOunces < 1 || nSugarPackets < 1 || nCreams < 1 || nCups < 1) {
+            restock(size, sugar, cream, 1);
+        }
+    }
+
+    public void sellCoffee(int size, int cream){
+        nCoffeeOunces -= size;
+        nCreams -= cream;
+        nCups -= 1;
+
+        if (nCoffeeOunces < 1 || nSugarPackets < 1 || nCreams < 1 || nCups < 1) {
+            restock(size, sugar, cream, 1);
+        }
+    }
+
     private void restock(int coffee, int sugar, int cream, int cups) {
         nCoffeeOunces += coffee;
         nSugarPackets += sugar;
