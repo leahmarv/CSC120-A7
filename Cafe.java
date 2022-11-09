@@ -20,9 +20,22 @@ public class Cafe extends Building {
         this.nCreams = cream;
         this.nCups = cups;
     }
+
+    public Cafe(String name, String address, int nFloors) {
+        super (name, address, nFloors);
+        System.out.println("You have built a cafe: ☕");
+        this.nCoffeeOunces = 0;
+        this.nSugarPackets = 0;
+        this.nCreams = 0;
+        this.nCups = 0;
+    }
     
+    public void goToFloor(int floor){
+        
+    }
+
     public void showOptions(){
-        super.showOptions()
+        super.showOptions();
         System.out.println("Available options at " + this.name + ":\n + sellCoffee() \n + restock()");
     }
     
@@ -38,15 +51,6 @@ public class Cafe extends Building {
         }
     }
 
-    public void sellCoffee(int size, int sugar){
-        nCoffeeOunces -= size;
-        nSugarPackets -= sugar;
-        nCups -= 1;
-
-        if (nCoffeeOunces < 1 || nSugarPackets < 1 || nCreams < 1 || nCups < 1) {
-            restock(size, sugar, cream, 1);
-        }
-    }
 
     public void sellCoffee(int size, int cream){
         nCoffeeOunces -= size;
@@ -54,7 +58,7 @@ public class Cafe extends Building {
         nCups -= 1;
 
         if (nCoffeeOunces < 1 || nSugarPackets < 1 || nCreams < 1 || nCups < 1) {
-            restock(size, sugar, cream, 1);
+            restock(size, 0, cream, 1);
         }
     }
 
